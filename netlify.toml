@@ -1,0 +1,9 @@
+npm install serverless-http
+npm install netlify-cli -g
+[[redirects]]
+
+to = "/.netlify/functions/api:s plat"
+from = "/*"
+status = 200
+[build]
+    functions = "functions"
